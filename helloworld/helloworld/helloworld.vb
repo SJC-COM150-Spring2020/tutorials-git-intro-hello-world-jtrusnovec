@@ -4,8 +4,11 @@
         'MessageBox.Show("Hello World!")
 
         'say hello world in a text box
-        txtName.Text = "Hello World!"
+        'txtName.Text = "Hello World!"
 
+
+        'print hello world to a listbox
+        lstHello.Items.Add("Hello World!")
 
 
 
