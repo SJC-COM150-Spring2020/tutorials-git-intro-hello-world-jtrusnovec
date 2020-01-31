@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class helloworld
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,10 +20,10 @@ Partial Class helloworld
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.btnPress = New System.Windows.Forms.Button()
-        Me.txtName = New System.Windows.Forms.TextBox()
+        Me.lstHello = New System.Windows.Forms.ListBox()
         Me.SuspendLayout()
         '
         'btnPress
@@ -38,15 +38,18 @@ Partial Class helloworld
         Me.btnPress.Text = "Press Me!"
         Me.btnPress.UseVisualStyleBackColor = False
         '
-        'txtName
+        'lstHello
         '
-        Me.txtName.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtName.Font = New System.Drawing.Font("Broadway", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtName.Location = New System.Drawing.Point(239, 285)
-        Me.txtName.Multiline = True
-        Me.txtName.Name = "txtName"
-        Me.txtName.Size = New System.Drawing.Size(321, 89)
-        Me.txtName.TabIndex = 1
+        Me.lstHello.BackColor = System.Drawing.Color.Blue
+        Me.lstHello.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lstHello.Font = New System.Drawing.Font("Papyrus", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lstHello.ForeColor = System.Drawing.Color.White
+        Me.lstHello.FormattingEnabled = True
+        Me.lstHello.ItemHeight = 33
+        Me.lstHello.Location = New System.Drawing.Point(256, 265)
+        Me.lstHello.Name = "lstHello"
+        Me.lstHello.Size = New System.Drawing.Size(262, 167)
+        Me.lstHello.TabIndex = 1
         '
         'helloworld
         '
@@ -54,15 +57,14 @@ Partial Class helloworld
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Pink
         Me.ClientSize = New System.Drawing.Size(791, 552)
-        Me.Controls.Add(Me.txtName)
+        Me.Controls.Add(Me.lstHello)
         Me.Controls.Add(Me.btnPress)
         Me.Name = "helloworld"
         Me.Text = "hello"
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents btnPress As Button
-    Friend WithEvents txtName As TextBox
+    Friend WithEvents lstHello As ListBox
 End Class
